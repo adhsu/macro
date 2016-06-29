@@ -1,0 +1,134 @@
+tue june 14
+---
+
+Macro
+
+mostly branding to make us feel high end and seem very competent
+hiring for internal + remote data science, and sales
+confidence
+big pat - used for CEOs of customer companies to pitch internally
+
+'magic notebook' - if they can see that they can just type a question and they can get an app back that looks really cool
+
+pitch
+(1) basil's company. no data scientist, can't afford one.
+right now you can't hire a data scientist. if they're good they're either remote (like at MIT) or at a big company like facebook. the only group you have access to right now is shitty people up here. they usually make 12-13k per month plus equity. 
+
+alternative for us is hiring. if you do hire ->
+they spend a lot of time setting up pipeline, setting up read replica, etc, main issue is that they're kind of wearing a lot of hats. app design, building a react app, data engineering, looking up scala pipelines, scaling, data cleaning and parsing, doing statistics, and almost certainly nobody is good at all of them. so not efficient.
+we can set up a read replica literally 100x faster than somebody who's never done it.
+
+if you have some sort of question you want answered, like if you're clara trying to understand how many responders take more than 2 hours. they will do some python work on this notebook, send you back a json list of ids or maybe give you a list of usernames, if they're really good they'll pipe it into an application that shows you the data. the perfect case is they build an application that builds a new stream from the database, new connection, always streams updates for a query, build a new react app that shows you this information in an optimal way, sortable, you can click and see the actual messages they were late on, they take all that, put it on a server, and you can access it wheneve ryou want. and it's always streaming live from the database at all times. that's the perfect setup and nobody really has that because it's a ton of different pieces that all have to work together. the optimal setup is really hard to get.
+
+so you get somewhere in between a screenshot of json and that. 
+what teams that are really good get is a non-reusable application. they just copy and paste the results from the query into the application. so you get an acceptable display but it doesn't update. so next time you want to know you ask them again. or you just don't ask them again.
+
+in short, we always respond with the best one, and the infrastructure is solid. we can generate new reusable apps with custom ui and custom streaming spark query, we are really good at that. we also break it down by specialty. like making a car. you break it into an assembly line.
+
+we have data engineers that do only data engineering. ETL cleanup (extract transfer load), we have people that do only that. so it's way more efficient. your statistician has to learn what ETL is and host python servers, etc, it's just weeks of work. 
+
+for your application we have a platform for that, we pipe it back to you on all platforms at once... we have infrastructure for exactly this type of thing.
+
+so we can build the best thing extremely quickly.
+
+===========
+
+big company version of pitch:
+- pretty similar, but a couple more things
+- a lot of communication overhead. so you end up hiring more people and it's a big mess. everyone is duplicating work
+- if i create a non reusable application, and put in data and submit it to you. if you ask me again, i'll be able to find the script, rerun it, upload it to the app and run it again. as the team gets bigger though, everyone has random scripts on their desktop, it's essentially gone after you ask the question once
+- everyone wants to ask questions, they don't care who they send it to, so they just send it to analysts@teespring.com. unless you have a great pipeline setup, which nobody really does, lots of communication overhead.
+
+- you're also spending a ridiculous amount of money. if you have a couple data engineers and 3 data scientists, you're probably spending like $800k/year.
+- terms are confusing - data analytics and data scientist.
+
+so you can fire all of them and we'll replace them all and make things great.
+
+if you're the CEO or really important, the data science team will rush and get you an answer asap. they won't be able to get back to you with a nice streaming app (that takes anyone a week) but they can get you numbers in a day or two. 
+
+if you're not as important (vp below) it's like 3 days to weeks. if you're a random employee you just really can't ask questions.
+
+=====
+
+applications are needed to get an intuitive understanding of what you're asking. raw numbers are the first step but don't really help me that much. if i see that 2% of my contractors are late, that's maybe the first red flag but i always want to investigate more.
+
+apps - hosting internally is problematic and ahrd. can't have it work on all platforms. if i'm the CEO and i'm accessing stuff on my phone/laptop, it has to be responsive, more realistically i just won't be able to do it.
+
+non obvious how you manage and version these applications, how you send them between people, really quite hard to do.
+
+what we do - mac app, iphone app, everything. when we answer a question, we send the response application to all the platforms. custom apps on demand.
+
+technically - we go in and turn all your data into a graph, can query on that graph really easily.
+also understanding the key attributes (e.g. user that has a location and avatar, we can always show you that important information)
+
+security is hard. we handle it. access it on phone with encryption and thumbprint, etc.
+in short - we push it to all your platforms, secure, immediately versioned, everything is really nice.
+
+-----
+definitions:
+rarely makes sense to query the entire table. much more imporatnt is to query by segments. and often these segments are nontrivial.
+
+e.g. clara - after new users joined, how were their accuracy rates in the first 3 months of their joining. 
+
+let's say i have 'expensive workers' and i have 'cheap workers' - these are custom definitions. like variables. 
+
+can define a 'late message' as a message that's sent more than 6 hours after it was received.
+
+so show me how for the first 3 months of users, what is their rate of late messages? and look for expensive vs cheap workers. really important for active users. every company has 20 different definitions of users, active user, engaged user, power user, etc etc. spotify - define a power user as somebody who listens to more than 100 songs. 
+
+can build up these complex queries that depend on these definitions. later i can modify the definition of power user to somebody who has been around for more than 2 years. it'll push the updates into every app you've ever previously defined with the term. now all your apps are brand new with the new definitions.
+
+so after a while you get into this scifi land where you start to define all these definitions. it's a hierarchical vocabulary. it can be arbitrarily complex and we can generate that in a few minutes.
+
+and then everyone can have their own definitions - personal, team, company, really understand your metrics in many different ways.
+
+and that's when you get an roi that's a ton over an internal data science team. 
+
+=====
+
+last thing:
+all these tools for understanding your database. tell if your table is corrupt, if you're missing a field, if you've misnamed something, etc.
+
+all of your data scientists use custom virtual machines for security and have tons of annotation built in. 
+
+your data is probably messed up and some stuff is incorrectly named. we can analyze a table and find outliers and make sure they're real. we can fix those errors and if the field is named something kind of confusing, like table s1 but it actually is signin_count, we can tag it and say this means signin_count, and see all the queries it was used in.
+
+the chance of us using the wrong name or missing something is much lower. 
+
+we work completely siloed, no downside or downtime on your team. 
+
+much higher efficiency, much safer. we catch statistical error way higher rate than they can in house. and if you're betting your company on these answers you should be confident.
+
+and we have two people look at every question to increase the chances that errors will be caught.
+
+
+========
+
+your data science team is supporting the rest of your business. the rest of your biz wants to know about your company. your co has a treasure trove of data that nobody else in the world has and that's how you should run your company
+
+you want to ask your data science team questions about your data to understand it at a quantitative and intuitive level. you slack your dude, whoever you are, you slack your data science team.
+
+we replace that with our app. so you send the questions to our app, but you don't have to think that much about it because we'll get back to you fast and answer your question very quickly. so you can be more lax with your questions.
+
+if you get your answers back in 2 weeks it's bad because there's no flow. you don't just ask one question, it's part of a chain of questions. you want to understand it at an intuitive level.
+
+so there's this back and forth. if each response takes 2 weeks you won't get a back and forth.
+
+so the ideal case is a magic notebook where you can write using your pen, it glows, and a beautiful application appears below in a second. then you can notice something and query about that and get another quick answer. we can't give you exactly that, but we can give you a lot closer to that than your in house team who can get sick and goes to bed at night.
+
+
+
+how much is it?
+we sell based on a 'data-science month' which is kind of like horsepower. 
+at a 30 person company we'd recommend like 2 DSMs, which would be around $12k/month.
+you'd want to hire one analyst and one enginer, which would be about 23-24k a month. we'd be about half that wiht 100x the throughput, completely parallelizable. 
+
+parallelizable - you might launch a feature and everyone in your company has questions. the load on data science is irregular. and maybe a week when everybody is heads down and nobody is asking everything.
+
+
+
+security - far more secure than your in house data scientist. putting up random urls, etc is actually much riskier. 
+
+
+
+

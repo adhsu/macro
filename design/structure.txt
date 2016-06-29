@@ -1,0 +1,99 @@
+MACRO
+
+
+# Macro is your data science team.
+
+We provide advanced infrastructure for intuitively analyzing and understanding your company's data at scale. 
+
+Powered by the world's best data engineers, statisticians, and application designers.
+
+[form: name, phone number, email, select time]
+
+--------
+
+## Ask a question
+[macro]
+- ask the same way, via our app
+- we're available 24/7
+
+[internal team]
+- ask your data scientist via slack
+- they might be asleep or sick
+
+--------
+
+## Question goes to the team
+
+** ask in plain english
+
+[macro]
+- best specialists for each part of the process (not random filipinos)
+- parallelizable, ask unlimited questions
+- better people for less
+- available immediately
+** can be or augment your data science team
+
+
+[internal team]
+- need to recruit, hire, onboard, manage well (all hard)
+- expensive
+- need many different skills (probably only good at a few of them)
+- limited capacity, can't answer all questions
+
+--------
+
+## Infrastructure
+[macro]
+- infrastructure: we use all the best tools (spark, redshift, streaming read replica)
+- process: in-place systems for properly annotating, error-correcting, and understanding your data. 
+- smart graph that we put in front that describes your data for us and for you. "human-powered normalization". standardize understanding your data.
+
+[internal team]
+- use whatever they know, not always the best tools
+- very slow onboarding because of institutional knowledge locked in data scientists' heads
+
+--------
+## Answer (immediately)
+
+[macro]
+- fast response: 20 minutes average
+  - it's fast, so you can ask more questions
+  - you don't have the perfect question. if you get an answer quickly, you can go back and forth until you get the right question. you can't do this if you have to wait days to weeks between each response.
+
+- get back rich custom application that runs natively on all platforms and is securely accessible from everywhere
+- stays real-time. streaming - as your data changes, will stay up to date.
+
+- not just raw numbers, it's a more intuitive and understandable, deeper view of your data
+- verification: two people always look at every query
+- always updatable, apps grow with your company
+
+[internal team]
+- 3 days to 2 weeks
+- you get unorganized json screenshots or static charts/tables
+- no trail or reproducibility or ability to update. things get stale.
+- not secure
+- almost never validated by multiple people
+
+--------
+## After (over time, a year later)
+
+[macro]
+- all apps are properly versioned and hosted
+- apps will update themselves with new/most current data
+- app migration: if database structure changes or a field is renamed, we'll autoamtically update every app
+- easy sharing with other team members (and through slack)
+- dashboard to store all your apps. all searchable, single place to understand your whole company.
+- you own everything: keep full history of all answers, queries, and work
+
+[internal team]
+- everything is fragmented; scripts are lost, data inconsistencies compound over time and are only stored in people's heads
+- answer sources are lost and not kept up to date
+- as database structure changes, applications break unpredictably
+
+--------
+
+
+
+logo:
+raleway
+work sans 800 <-

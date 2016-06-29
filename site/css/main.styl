@@ -1,0 +1,93 @@
+@import "../libs/reset.css";
+@import "../libs/flexboxgrid.css";
+@import vars
+@import utilities
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,300,500,600,700,800');
+@import url('https://fonts.googleapis.com/css?family=Work+Sans:400,900,800,700');
+@import Hero
+@import Section
+
+body
+  background-color #fff
+  font-family 'Open Sans', sans-serif
+  font-size $font-size-normal
+  line-height $line-height-normal
+  font-weight 300
+  color $black
+
+ul, ol
+  font-family 'Open Sans', sans-serif
+  list-style none
+  list-style-type none
+  margin 0
+  padding 0
+
+ul li
+  margin-bottom 20px
+  
+ul.publications-list
+  list-style-type disc
+  margin-left 1.5em
+
+p
+  color $black
+  margin 0
+  margin-bottom 16px
+  &:last-child
+    margin-bottom 0
+  
+a
+  color $black
+  text-decoration none
+  opacity 1
+  transition all 0.5s
+
+a:hover
+  opacity 0.75
+  text-decoration underline
+
+h1
+  font-weight 300
+  font-size 30px
+  line-height 36px
+  margin 0
+  margin-bottom 12px
+  margin-top 32px
+
+h2
+  font-weight 300
+  font-size 21px
+  line-height 28px
+  margin 0
+  margin-bottom 11px
+  margin-top 21px
+
+
+.screenshot-placeholder
+  background-color gray
+  width 100%
+  height 400px
+  margin-top 2rem
+  margin-bottom 2rem
+
+// flexboxgrid addons
+
+.container  
+  width 100%
+  max-width 1200px
+  padding-left 1.5rem
+  padding-right 1.5rem
+
+// xs
+@media only screen and (max-width:48em)
+  .u-hidden-xs
+    display none !important
+    
+// sm
+@media only screen and (min-width:48em)
+  .u-block-sm
+    display block !important
+  
+  .u-hidden-sm
+    display none !important
+    

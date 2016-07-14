@@ -1,89 +1,181 @@
 doctype html
 html
-head
-  title Macro: Your Data Science Team
-  meta(name="viewport" content="width=device-width, initial-scale=1")
-  
-  link(rel="stylesheet", type="text/css", href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css")
-  link(rel="stylesheet", type="text/css", href="css/main.css")
+  head
+    title Macro: Your Data Science Team
+    meta(name="viewport" content="width=device-width, initial-scale=1")
+    
+    link(rel="stylesheet", type="text/css", href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css")
+    link(rel="stylesheet", type="text/css", href="css/main.css")
 
 
 
-body
-
-  header.Hero
+  body
     nav
-      a(href='/')
-        img.nav-logo(src='img/logo.svg')
-      //- span.nav-text MACRO
-    .container.container-fluid
-      .row.middle-xs
-        .col-md-7
-          h1.hero-title Macro is your data science team.
-          p.hero-subtitle We provide advanced infrastructure for intuitively analyzing and understanding your company's data at scale.
-          p.hero-subtitle Powered by the world's best data engineers, statisticians, and application designers.
-        .col-md-1 
-        .col-md-4
-          .hero-form
-            input.hero-input(type='text', placeholder='Name')
-            input.hero-input(type='text', placeholder='Phone')
-            input.hero-input(type='text', placeholder='Email')
-            input.hero-input(type='text', placeholder='When to call')
-            button.hero-input-btn(type='submit') Request call
-
-  section.Section
-    .container.container-fluid
-      .row.center-xs
-        .col-md-12
-          h1.section-title Build an amazing data science team instantly
-      
-      .row
-        .col-md-12
-          .screenshot-placeholder
-
-      .row.center-xs
-        .col-md-6.u-textLeft
-          ol.product-steps
-            li Ask any plain English question about your company’s data through the Macro app, the same way you’d message a data scientist on your team.
-            li Macro’s platform allows our expert data scientists to build and send back a rich, interactive answer far more quickly than a traditional team, at any time of day.
-            li All your answers are secure, searchable, automatically update with your latest data, and form a deeper, more intuitive view of your data.
-            li Just launched a feature and need to ask 20 questions in a day? We scale with your company.
-  
-  section.Section.Section--invertBg
-    .container.container-fluid
-      .row.center-xs
-        .col-md-10
-          h1.section-title Advanced infrastructure for data science
-          p.section-subtitle It’s not just about using the latest technology. It’s about automating processes around understanding and maintaining your data science platform. 
-
-  section.Section
-    .container.container-fluid
-      .row.center-xs
-        .col-md-10
-          h1.section-title Intelligent, custom answers
-          p.section-subtitle Fast answers is not just a feature; it opens up whole new paths of understanding how your company works.
-
-  section.Section
-    .container.container-fluid
-      .row.center-xs
-        .col-md-10
-          h1.section-title We grow with you
-          p.section-subtitle We work with you to better tag and understand your data and give you an organized, searchable interface to access everything happening in your company.
-
-  section.Section
-    .container.container-fluid
-      .row.center-xs
-        .col-md-10
-          h1.section-title Learn more about Macro
-          p.section-subtitle We’ll call you to discuss your custom data science needs.
-      .row.center-xs
-        .col-md-4
-          .hero-form.Spacing--medium--top
-            input.hero-input(type='text', placeholder='Name')
-            input.hero-input(type='text', placeholder='Phone')
-            input.hero-input(type='text', placeholder='Email')
-            input.hero-input(type='text', placeholder='When to call')
-            button.hero-input-btn(type='submit') Request call
+      .container.container-fluid
+        .row.between-xs.middle-xs
+          .col-xs-12.col-sm-6
+            a.nav-logo(href='/')
+              img.nav-logo-image(src='img/logo2.svg')
+              span.nav-logo-text Macro Data Science
+                
+          .col-xs-6.u-textRight.u-hidden-xs
+              a.nav-link(href='#') Features
+              a.nav-link(href='#') Team
+              a.nav-link(href='#') Pricing
+              a.nav-link(href='#') Support
+              a.nav-link.nav-link-strong(href='#') Request a call
 
 
+
+    header.Hero
+
+      .container.container-fluid
+        .row.middle-xs.center-xs
+          .col-xs-12
+            .row.Spacing--large--bottom
+              .col-xs-12
+                .hero-title-background
+                  span.hero-title Macro is your data science team.
+            
+            .row.center-xs.Spacing--large--bottom
+              .col-xs-12.col-sm-9
+                p.hero-subtitle We provide advanced data science infrastructure along with amazing data engineers, statisticians, and app designers. Start intuitively understanding your data and running your business more effectively.
+          
+            .row
+              .col-xs-12
+                a.hero-btn(href='#') Request a call to learn more
+            
+
+
+    section.Section.Section--grayBg.pipeline
+      .container.container-fluid
+        
+        //- .pipeline-line
+
+        .row.center-xs.Spacing--large--bottom
+          .col-xs-12
+            h1.section-title How does it work?
+
+        .row.middle-xs.Spacing--large--bottom
+          .col-xs-12.col-sm-5.first-sm
+            h2.section-subtitle Connect with your brand new data science team
+            p We'll assign you a senior data scientist as an account lead who will be your point of contact and coordinate all your questions with our full team. 
+            p We hire amazing specialists from all fields of data science, from engineers to statisticians to advanced modeling experts. Our team is instantly available, diverse, and flexible which means you don’t need to recruit, hire, and manage.
+            a(href='#') Learn more about Macro's data science team &gt;
+          
+          .col-xs-12.col-sm-2.first-xs
+            img.pipeline-icon(src='img/icon-pipeline-team.svg')
+          
+          .col-xs-12.col-sm-5.third-col
+            img.team-card(src='img/team-card.png')
+
+
+        .row.middle-xs.Spacing--large--bottom
+          .col-xs-12.col-sm-5.first-sm
+            h2.section-subtitle Ask any question you want
+            p Message your Macro data team the exact same way you'd message a data scientist on your team -- in plain English. 
+            p Macro's apps are on every platform and available 24/7, allowing you to ask questions anytime, anywhere.
+            a(href='#') Learn more about Macro apps &gt;
+            
+          .col-xs-12.col-sm-2.first-xs
+            img.pipeline-icon(src='img/icon-pipeline-question.svg')
+          
+          .col-xs-12.col-sm-5.third-col
+            .question-ss-wrapper
+              img.question-ss(src='img/question-ss.png')
+
+        .row.middle-xs.Spacing--large--bottom
+          .col-xs-12.col-sm-5.first-sm
+            h2.section-subtitle Use the most advanced infrastructure
+            p Data science is messy. It’s not just about using the latest technology. It’s about automating processes around understanding and maintaining your data science platform.
+            p Our scientists use a custom software stack to annotate, clean, and process your data, continually improving our understanding.
+            a(href='#') Learn more about Macro infrastructure &gt;
+
+            
+          .col-xs-12.col-sm-2.first-xs
+            img.pipeline-icon(src='img/icon-pipeline-infra.svg')
+          .col-xs-12.col-sm-5.third-col
+            
+
+        .row.middle-xs.Spacing--large--bottom
+          .col-xs-12.col-sm-5.first-sm
+            h2.section-subtitle Get rich, intelligent answers
+            p Our data scientists build and send back an interactive answer far more quickly than a traditional team, at any time of day.
+            p All your answers are secure, searchable, automatically update with your latest data, and form a deeper, more intuitive view of your data.
+            a(href='#') Learn more about Answers &gt;
+            
+            
+          .col-xs-12.col-sm-2.first-xs
+            img.pipeline-icon(src='img/icon-pipeline-answer.svg')
+          .col-xs-12.col-sm-5.third-col
+            img.answer-ss(src='img/answer-ss.png')
+            
+
+    
+    section.Section.Section--invertBg.growth-features
+      .container.container-fluid
+        .row.center-xs.Spacing--large--bottom
+          .col-xs-12.col-sm-8
+            h1.section-title We grow with you
+            p.section-description Macro's data, engineering, design, and support experts keep your data science operation running smoothly. We've built our answers to evolve over time as your company changes.
+
+      .container.container-fluid
+        .row.around-xs
+          .col-xs-12.col-sm-4.growth-feature
+            img(src='img/icon-versioning.svg')
+            h3 Versioning, hosting, and sharing
+            p All answers are properly versioned and hosted in one place, with easy and secure sharing. No more messiness.
+          .col-xs-12.col-sm-4.growth-feature
+            img(src='img/icon-autoupdate.svg')
+            h3 Auto-update with new data
+            p Answers automatically update themselves to display the latest data.
+          .col-xs-12.col-sm-4.growth-feature
+            img(src='img/icon-automigration.svg')
+            h3 Auto-migration
+            p If your database structure or field names change, your answers won't break.
+        .row.around-xs
+          .col-xs-12.col-sm-4.growth-feature
+            img(src='img/icon-secure.svg')
+            h3 Secure access
+            p Intelligently secure your answers with fingerprint access.
+          .col-xs-12.col-sm-4.growth-feature
+            img(src='img/icon-dashboard.svg')
+            h3 Central dashboard
+            p Macro's dashboard stores all your answers. One searchable place to understand your whole company.
+          .col-xs-12.col-sm-4.growth-feature
+            img(src='img/icon-proofofwork.svg')
+            h3 Proof of work
+            p Keep the full history of all answers, queries, and work.
+
+    section.Section
+      .container.container-fluid
+        .row.center-xs
+          .col-xs-12.col-sm-5
+            h1.section-title Customer stories
+            p.section-description Talk to our customers about how they've used Macro effectively to solve their data science problems.
+
+    section.Section.Section--grayBg.pipeline
+      .container.container-fluid
+        .row.center-xs.Spacing--medium--bottom
+          .col-xs-12.col-sm-8
+            h1.section-title Ready to learn more about Macro?
+            p.section-description.Spacing--medium--bottom We’ll call you to discuss your custom data science needs at your convenience.
+            a.hero-btn(href='#') Request a call to learn more
+
+    
+    footer.Footer
+      .container.container-fluid
+        .row.between-xs.middle-xs
+          .col-xs-12.col-sm-6
+            a.nav-logo(href='/')
+              img.nav-logo-image(src='img/logo2-white.svg')
+              span.nav-logo-text Macro Data Science
+          .col-xs-6.u-textRight.u-hidden-xs
+            a.nav-link(href='#') Features
+            a.nav-link(href='#') Team
+            a.nav-link(href='#') Pricing
+            a.nav-link(href='#') Join us
+            a.nav-link(href='#') Support
+            a.nav-link(href='#') Privacy
+            a.nav-link(href='#') Terms
 

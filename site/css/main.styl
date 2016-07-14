@@ -4,19 +4,25 @@
 @import utilities
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:400,300,500,600,700,800');
 @import url('https://fonts.googleapis.com/css?family=Work+Sans:400,900,800,700');
+@import Nav
 @import Hero
 @import Section
+@import Pipeline
+@import Footer
 
+
+*
+  -webkit-font-smoothing antialiased
 body
   background-color #fff
-  font-family 'Open Sans', sans-serif
+  font-family 'Atlas Grotesk', sans-serif
   font-size $font-size-normal
   line-height $line-height-normal
   font-weight 300
-  color $black
+  color $brandDarker
 
 ul, ol
-  font-family 'Open Sans', sans-serif
+  font-family 'Atlas Grotesk', sans-serif
   list-style none
   list-style-type none
   margin 0
@@ -30,21 +36,22 @@ ul.publications-list
   margin-left 1.5em
 
 p
-  color $black
+  color $brandDark
+  font-weight 300
   margin 0
   margin-bottom 16px
   &:last-child
     margin-bottom 0
   
 a
-  color $black
+  color $brandRed
   text-decoration none
   opacity 1
   transition all 0.5s
 
 a:hover
   opacity 0.75
-  text-decoration underline
+  // text-decoration underline
 
 h1
   font-weight 300
@@ -78,13 +85,16 @@ h2
   padding-left 1.5rem
   padding-right 1.5rem
 
+.container-fluid
+  width 100%
+  
 // xs
-@media only screen and (max-width:48em)
+@media only screen and (max-width:$sm-viewport)
   .u-hidden-xs
     display none !important
     
 // sm
-@media only screen and (min-width:48em)
+@media only screen and (min-width:$sm-viewport)
   .u-block-sm
     display block !important
   

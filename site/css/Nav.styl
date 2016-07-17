@@ -1,11 +1,13 @@
 @import vars
 
 nav
-  position absolute
+  position fixed
+  z-index 1
   top 0
   left 0
   width 100%
   height 70px
+  background-color rgba($white, 50%)
 
 .nav-logo
   line-height 70px
@@ -32,3 +34,13 @@ nav
   
 .nav-link-strong
   font-weight 500
+
+.Hero-inverted
+  nav
+    background-color $brandRed
+    
+  .nav-logo-image
+    filter brightness(0) invert(1) // make white
+  .nav-logo-text
+  .nav-link
+    color $white

@@ -6,7 +6,7 @@ html
     
     link(rel="stylesheet", type="text/css", href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css")
     link(rel="stylesheet", type="text/css", href="css/main.css")
-
+    script(src='js/main.js')
 
 
   body
@@ -16,14 +16,14 @@ html
 
     header.Hero
       nav
-        .container.container-fluid
+        .container.container-small.container-fluid
           .row.between-xs.middle-xs
-            .col-xs-12.col-sm-6
+            .col-xs-12.col-sm-4
               a.nav-logo(href='/')
                 img.nav-logo-image(src='img/logo2.svg')
-                span.nav-logo-text Macro Data Science
+                span.nav-logo-text Macro
                   
-            .col-xs-6.u-textRight.u-hidden-xs
+            .col-xs-8.u-textRight.u-hidden-xs
                 a.nav-link(href='#') Features
                 a.nav-link(href='#') Team
                 a.nav-link(href='#') Pricing
@@ -36,12 +36,13 @@ html
           .col-xs-12
             .row.Spacing--large--bottom
               .col-xs-12
+                //- span.hero-title.hero-title-underline Macro is your data science team.
                 .hero-title-background
-                  span.hero-title Macro is your data science team.
+                  span.hero-title Supercharge your data science team.
             
             .row.center-xs.Spacing--large--bottom
               .col-xs-12.col-sm-9
-                p.hero-subtitle We provide advanced data science infrastructure along with amazing data engineers, statisticians, and app designers. Start intuitively understanding your data and running your business more effectively.
+                p.hero-subtitle Macro provides advanced data science infrastructure along with amazing data engineers, statisticians, and app designers. Start intuitively understanding your data and running your business more effectively.
           
             .row
               .col-xs-12
@@ -60,13 +61,15 @@ html
 
         .row.middle-xs.Spacing--large--bottom
           .col-xs-12.col-sm-5.first-sm
+            img(src='img/icon-pipeline-team.svg')
             h2.section-subtitle Connect with your brand new data science team
             p We'll assign you a senior data scientist as an account lead who will be your point of contact and coordinate all your questions with our full team. 
             p We hire amazing specialists from all fields of data science, from engineers to statisticians to advanced modeling experts. Our team is instantly available, diverse, and flexible which means you don’t need to recruit, hire, and manage.
-            a(href='#') Learn more about Macro's data science team &gt;
+            a(href='#') Read more &gt;
           
           .col-xs-12.col-sm-2.first-xs
-            img.pipeline-icon(src='img/icon-pipeline-team.svg')
+            .pipeline-icon-wrapper
+              img.pipeline-icon(src='img/icon-pipeline-team.svg')
           
           .col-xs-12.col-sm-5.third-col
             img.team-card(src='img/team-card.png')
@@ -77,10 +80,11 @@ html
             h2.section-subtitle Ask any question you want
             p Message your Macro data team the exact same way you'd message a data scientist on your team -- in plain English. 
             p Macro's apps are on every platform and available 24/7, allowing you to ask questions anytime, anywhere.
-            a(href='#') Learn more about Macro apps &gt;
+            a(href='#') Read more &gt;
             
           .col-xs-12.col-sm-2.first-xs
-            img.pipeline-icon(src='img/icon-pipeline-question.svg')
+            .pipeline-icon-wrapper
+              img.pipeline-icon(src='img/icon-pipeline-question.svg')
           
           .col-xs-12.col-sm-5.third-col
             .question-ss-wrapper
@@ -91,11 +95,12 @@ html
             h2.section-subtitle Use the most advanced infrastructure
             p Data science is messy. It’s not just about using the latest technology. It’s about automating processes around understanding and maintaining your data science platform.
             p Our scientists use a custom software stack to annotate, clean, and process your data, continually improving our understanding.
-            a(href='#') Learn more about Macro infrastructure &gt;
+            a(href='#') Read more &gt;
 
             
           .col-xs-12.col-sm-2.first-xs
-            img.pipeline-icon(src='img/icon-pipeline-infra.svg')
+            .pipeline-icon-wrapper
+              img.pipeline-icon(src='img/icon-pipeline-infra.svg')
           .col-xs-12.col-sm-5.third-col
             
 
@@ -104,11 +109,12 @@ html
             h2.section-subtitle Get rich, intelligent answers
             p Our data scientists build and send back an interactive answer far more quickly than a traditional team, at any time of day.
             p All your answers are secure, searchable, automatically update with your latest data, and form a deeper, more intuitive view of your data.
-            a(href='#') Learn more about Answers &gt;
+            a(href='#') Read more &gt;
             
             
           .col-xs-12.col-sm-2.first-xs
-            img.pipeline-icon(src='img/icon-pipeline-answer.svg')
+            .pipeline-icon-wrapper
+              img.pipeline-icon(src='img/icon-pipeline-answer.svg')
           .col-xs-12.col-sm-5.third-col
             img.answer-ss(src='img/answer-ss.png')
             
@@ -151,10 +157,14 @@ html
 
     section.Section
       .container.container-fluid
-        .row.center-xs
+        .row.center-xs.Spacing--large--bottom
           .col-xs-12.col-sm-5
             h1.section-title Customer stories
             p.section-description Talk to our customers about how they've used Macro effectively to solve their data science problems.
+
+        .row.center-xs
+          .customer-image-wrapper
+            img.customer-image(src='img/onboardiq.jpg')
 
     section.Section.Section--grayBg.pipeline
       .container.container-fluid
@@ -166,13 +176,13 @@ html
 
     
     footer.Footer
-      .container.container-fluid
+      .container.container-small.container-fluid
         .row.between-xs.middle-xs
-          .col-xs-12.col-sm-6
+          .col-xs-12.col-sm-4
             a.nav-logo(href='/')
               img.nav-logo-image(src='img/logo2-white.svg')
-              span.nav-logo-text Macro Data Science
-          .col-xs-6.u-textRight.u-hidden-xs
+              span.nav-logo-text Macro
+          .col-xs-8.u-textRight.u-hidden-xs
             a.nav-link(href='#') Features
             a.nav-link(href='#') Team
             a.nav-link(href='#') Pricing
